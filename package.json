@@ -1,0 +1,14 @@
+{
+  "name": "typeScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "dev":" nodemon src/server.ts",
+    "build":""
+  },
+  "dependencies": {
+    "sucrase": "^3.15.0",
+    "typescript": "^3.9.3"
+  }
+}
