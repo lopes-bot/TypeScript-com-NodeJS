@@ -1,2 +1,3 @@
-const a = 5;
-console.log('tag', a);
+const a = 8
+
+console.log('tag', a)
