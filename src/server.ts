@@ -1,3 +1,3 @@
-const a = 8
+import app from './app'
 
-console.log('tag', a)
+app.listen(3333)
