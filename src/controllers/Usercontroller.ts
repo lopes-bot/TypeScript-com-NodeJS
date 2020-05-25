@@ -31,6 +31,25 @@ class UserController {
       user
     })
   }
+
+  public async UpDate (req:Request, res:Response): Promise<Response> {
+    const id = req.params
+    const value = req.body
+
+    const user = await User.updateOne({ id: id }, value, (err) => {
+      if (err) {
+        return res.status(400).json({
+          erro: true,
+          messege: 'Erro ao atera dados!'
+        })
+      }
+    })
+    return res.json({
+      erro: false,
+      messege: 'Dados alterados com sucesso!',
+      user
+    })
+  }
 }
 
 export default new UserController()
